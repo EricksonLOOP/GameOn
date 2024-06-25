@@ -1,0 +1,6 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µυη8Σ γήθ1
+r	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΐ²Ζδÿÿÿÿÿ8Σ γήθ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦­‹†8·Φήθ1
+i	java:S116"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΉΖ±8έ γήθ1
+o	java:S116"NRename this field "CPF" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(κςΞϊÿÿÿÿ8ή γήθ1
