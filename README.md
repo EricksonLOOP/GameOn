@@ -1,6 +1,6 @@
 # GameOn API
 
-Esta é uma API desenvolvida para o projeto GameOn, uma plataforma de jogos online.
+This is an API developed for the GameOn project, an online gaming platform.
 
 ## Tecnologias Utilizadas
 
@@ -9,60 +9,60 @@ Esta é uma API desenvolvida para o projeto GameOn, uma plataforma de jogos onli
 - Spring Data JPA
 - Spring Security
 - Lombok
-- H2 Database (para ambiente de desenvolvimento)
+- H2 Database (for development environment)
 
 ## Configuração e Execução
 
-1. Clone este repositório.
-2. Certifique-se de ter o JDK e o Maven instalados em seu sistema.
-3. Importe o projeto em sua IDE Java favorita.
-4. Execute a classe `GameOnApplication` para iniciar o servidor localmente.
+1. Clone this repository.
+2. Make sure you have the JDK and Maven installed on your system.
+3. Import the project into your favorite Java IDE.
+4. Run the `GameOnApplication` class to start the server locally.
 
 ## Endpoints
 
-A API possui os seguintes endpoints:
+The API has the following endpoints:
 
-- `/signup`: Cadastro de novos usuários.
-- `/login`: Autenticação de usuários.
-- `/logoff/{id}`: Deslogar usuário.
-- `/usuarios/{name}`: Pesquisar usuário pelo nome.
-- `/usuarios`: Obter todos os usuários.
-- `/usuarios/{id}`: Obter um usuário pelo ID.
-- `/usuarios/{id}`: Atualizar um usuário.
-- `/usuarios/{id}`: Deletar um usuário.
-- `/helloworld`: Exemplo de endpoint para testar a API.
-- `/chat`: Enviar mensagem no chat.
-- `/chat`: Obter todas as mensagens do chat.
-- `/chat/{id}`: Deletar mensagem do chat.
-- `/publishs`: Publicar uma postagem.
-- `/publishs/{id}`: Listar publicações.
-- `/publishs/{id}`: Deletar uma publicação.
-- `/checkAuthority/{loggedUser}/{publishUser}`: Verificar autoridade de uma publicação.
+- `/signup`: Register new users.
+- `/login`: Authenticate users.
+- `/logoff/{id}`: Log out users.
+- `/users/{name}`: Search for users by name.
+- `/users`: Get all users.
+- `/users/{id}`: Get a user by ID.
+- `/users/{id}`: Update a user.
+- `/users/{id}`: Delete a user.
+- `/helloworld`: Example endpoint to test the API.
+- `/chat`: Send a message in the chat.
+- `/chat`: Get all chat messages.
+- `/chat/{id}`: Delete a chat message.
+- `/publishes`: Publish a post.
+- `/publishes/{id}`: List publications.
+- `/publishes/{id}`: Delete a publication.
+- `/checkAuthority/{loggedUser}/{publishUser}`: Check the authority of a publication.
 
-## Segurança
+## Security
 
-- A autenticação de usuários é realizada através do endpoint `/login`, que recebe as credenciais do usuário e retorna um token de acesso JWT.
-- O token JWT deve ser incluído no cabeçalho das solicitações subsequentes para endpoints protegidos. O token é verificado pelo Spring Security para garantir que o usuário esteja autenticado antes de conceder acesso.
-- A senha dos usuários é armazenada no banco de dados após ser criptografada usando BCryptPasswordEncoder.
-- O Spring Security é configurado para permitir acesso público a alguns endpoints, como `/signup`, `/login`, `/logoff` e `/helloworld`, enquanto outros endpoints exigem autenticação.
-- A autenticação é baseada em roles, onde cada usuário autenticado recebe automaticamente a role "USER".
-
+- User authentication is performed through the `/login` endpoint, which receives the user's credentials and returns a JWT access token.
+- The JWT token must be included in the header of subsequent requests to protected endpoints. The token is verified by Spring Security to ensure that the user is authenticated before granting access.
+- The user's password is stored in the database after being encrypted using BCryptPasswordEncoder.
+- Spring Security is configured to allow public access to some endpoints, such as `/signup`, `/login`, `/logoff`, and `/helloworld`, while other endpoints require authentication.
+- Authentication is role-based, where each authenticated user is automatically assigned the "USER" role.
+- 
 ## Chat
 
-- O endpoint `/chat` permite que os usuários enviem mensagens no chat da plataforma.
-- As mensagens do chat podem ser visualizadas através do endpoint `/chat`.
-- É possível excluir uma mensagem do chat usando o endpoint `/chat/{id}`.
+- The `/chat` endpoint allows users to send messages in the platform's chat.
+- Chat messages can be viewed through the `/chat` endpoint.
+- It is possible to delete a chat message using the `/chat/{id}` endpoint.
 
-## Publicações
+## Publications
 
-- O endpoint `/publishs` permite que os usuários publiquem conteúdo na plataforma.
-- As publicações podem ser listadas usando o endpoint `/publishs`.
-- As publicações podem ser deletadas usando o endpoint `/publishs/{id}`.
+- The `/publishes` endpoint allows users to publish content to the platform.
+- Publications can be listed using the `/publishes` endpoint.
+- Publications can be deleted using the `/publishes/{id}` endpoint.
 
-## Contribuindo
+## Contributing
 
-Sinta-se à vontade para contribuir com este projeto! Basta fazer um fork do repositório, fazer as alterações desejadas e enviar uma pull request.
+Feel free to contribute to this project! Just fork the repository, make your desired changes, and submit a pull request.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
